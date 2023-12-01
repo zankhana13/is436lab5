@@ -25,6 +25,6 @@ jobs:
           FTP_PASSWORD: ${{ secrets.ftp_password }}
           local_path: './*'
           PORT: 22
-          METHOD: sftp
+          METHOD: ftp
           remote_path: '/site/is436lab5/'
-          sftp_only: true
+          sftp_only: false
