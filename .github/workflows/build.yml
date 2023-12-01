@@ -14,9 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.0
       - name: Deploy file
-        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         env:
-          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
           FTP_SERVER: home562576484.1and1-data.host
           FTP_USERNAME: ${{secrets.ftp_username}}
           FTP_PASSWORD: ${{ secrets.ftp_password }}
