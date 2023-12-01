@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v2.3.2
       - name: Deploy file
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         env:
           FTP_SERVER: home562576484.1and1-data.host
           FTP_USERNAME: ${{secrets.ftp_username}}
