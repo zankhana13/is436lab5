@@ -20,7 +20,7 @@ jobs:
       - name: Deploy file
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         env:
-          FTP_SERVER: home562576484.1and1-data.host
+          server: home562576484.1and1-data.host
           FTP_USERNAME: ${{secrets.ftp_username}}
           FTP_PASSWORD: ${{ secrets.ftp_password }}
           local_path: './*'
